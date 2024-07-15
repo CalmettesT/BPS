@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Achetez du bois de chauffage de qualité supérieure en ligne. Nous offrons une sélection de bois de chauffage sec et durable pour alimenter votre poêle à bois ou votre cheminée. Livraison rapide disponible. Commandez maintenant !">
+    <title>BPS</title>
+    <link rel="shortcut icon" href="./img/BOIS_PYRENEELogoUrl.png" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/BOIS_PYRENEE_Header.svg">
+        <div class="navbar">
+            <span class="btn-nav"><a href="#accueil">Accueil</a></span>
+            <span class="btn-nav"><a href="#presentation">Presentation</a></span>
+            <span class="btn-nav"><a href="#contact">Contact</a></span>
+        </div>
+
+        <!-- <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div> -->
+    </header>
+    <section id="accueil">
+        <div class="container-accueil">
+            <img class="img-background" src="./img/backgroundForet.jpg">
+            <div class="text-accueil">
+                <h1>Bois Pyrénées Services</h1>
+                <p>Nous sommes spécialiste dans la vente de bois de chauffage de haute qualité.
+                    Nous offrons une gamme complète de produits en bois pour répondre aux besoins de nos clients, allant
+                    des bûches traditionnelles aux pellets de bois écologiques.</p>
+                <button class="btn-contact"><a href="mailto:boispyrserv@sfr.fr">Nous Contacter</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="presentation">
+        <div class="container-presentation">
+            <img class="poele" src="./img/poele-a-bois.jpg">
+            <div class="text-presentation">
+                <h2>Chauffage au Bois : Écologie, Économie et Confort</h2>
+                <p>
+                    Le <b>chauffage au bois</b> représente une alternative intelligente pour un grand nombre de raisons.
+                    Il s'agit d'une <b>énergie renouvelable</b> qui respecte l'environnement. Pendant la combustion, le
+                    bois n'émet <b>pas plus de CO2</b> que ce qu'un <b>arbre</b> absorbe durant sa croissance, le
+                    rendant une alternative <b>plus verte</b> par rapport aux <b>énergies fossiles</b>.
+                </p>
+                <p>
+                    En tant que <b>ressource locale</b>, le bois de chauffage soutient <b>l'économie régionale</b> tout
+                    en réduisant <b>l'empreinte carbone</b> due au transport. De plus, le bois est généralement <b>moins
+                        coûteux</b> que les autres sources d'énergie.
+                </p>
+                <p>
+                    L'ambiance créée par le chauffage au bois est <b>incomparable</b>. Il offre une chaleur douce et
+                    agréable, et la vision du feu ajoute une <b>touche cosy et chaleureuse</b> à votre intérieur.
+                </p>
+            </div>
+        </div>
+        <div class="container-presentation">
+            <div class="text-presentation">
+                <h2>Bois de chauffage</h2>
+                <p>Notre large gamme de bois de chauffage inclut des essences de bois dures telles que le <b>chêne, le
+                        hêtre et le frêne</b>. Chacun de nos bois est coupé et séché selon les <b>normes</b> les plus
+                    strictes pour <b>garantir une longue durée de vie et une combustion propre</b>.
+
+                    Nous <b>livrons à domicile</b> ou vous pouvez venir retirer votre commande en toute sécurité à
+                    <b>notre entrepôt</b>. Nous vous <b>garantissons des prix compétitifs</b> et une <b>qualité
+                        exceptionnelle</b> pour chaque commande.
+                </p>
+            </div>
+            <img class="bois-presentation" src="./img/boisDeChauffage.jpg">
+            <button class="btn-tarif" onclick="afficherTarifs()">Voir Tarif</button>
+        </div>
+        <div class="container-tableau">
+            <label for="region-select">Sélectionnez votre région pour afficher le prix de livraison : </label>
+            <select id="region-select">
+                <option value="Sur Place">Sur Place</option>
+                <option value="Pau">Pau</option>
+                <option value="Tarbes">Tarbes</option>
+                <option value="Lourdes">Lourdes</option>
+            </select>
+
+            <table id="tarifsTable">
+                <thead>
+                    <tr>
+                        <th>Nombre de Stères</th>
+                        <th>Prix du Stère</th>
+                        <th>Bois</th>
+                        <th>Livraison</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" class="nb-steres" value="1"></td>
+                        <td>65€</td>
+                        <td>Chêne, Hêtre et Frêne</td>
+                        <td class="tarif-livraison">0€</td>
+                        <td class="total"></td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="contact">
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Telephone : 06 13 13 13 13</a></li>
+                            <li><a href="mailto:boispyrserv@sfr.fr">Mail : boispyrserv@sfr.fr</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script type="text/javascript" src="./JS/script.js"></script>
+</body>
+
+</html>
